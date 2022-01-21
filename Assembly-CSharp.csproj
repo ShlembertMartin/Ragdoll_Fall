@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{4A62E8EE-4719-D897-76E0-00890EF986C4}</ProjectGuid>
+    <ProjectGuid>{EC11AB74-A453-615C-EDF2-C262FDE58ECD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -53,15 +53,16 @@
     <UnityVersion>2020.3.26f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Sripts\TabPlatform.cs" />
-    <Compile Include="Assets\Sripts\StartBalist.cs" />
-    <Compile Include="Assets\Sripts\TriggerPlatform.cs" />
     <Compile Include="Assets\Sripts\Salut.cs" />
     <Compile Include="Assets\Sripts\Trampoline.cs" />
+    <Compile Include="Assets\Sripts\Piston.cs" />
     <Compile Include="Assets\Sripts\TriggerTramp.cs" />
     <Compile Include="Assets\Sripts\StartPlatform.cs" />
     <Compile Include="Assets\Sripts\Button.cs" />
     <Compile Include="Assets\Sripts\TargetCam.cs" />
+    <Compile Include="Assets\Sripts\PressPiston.cs" />
+    <Compile Include="Assets\Sripts\CollisionPiston.cs" />
+    <Compile Include="Assets\Sripts\TriggerButton.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
