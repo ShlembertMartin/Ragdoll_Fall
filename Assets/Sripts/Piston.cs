@@ -1,6 +1,5 @@
 using UnityEngine;
 
-
 public class Piston : MonoBehaviour
 { 
     enum Type {Auto, Manual}
@@ -8,20 +7,20 @@ public class Piston : MonoBehaviour
     [SerializeField] private Transform piston;
     [SerializeField] private Transform upPoint;
     [SerializeField] private Transform downPoint;
-     private float speedShoot = 4;
-     private float speedCharging = 2;
     [SerializeField] private float forceUp;
     [SerializeField] private float forceForward;
     [SerializeField] private Rigidbody[] playerRigidbody;
     [SerializeField] private PressPiston pressPiston;
     [SerializeField] private CollisionPiston collisionPiston;
     [SerializeField] private TriggerButton triggerButton;
+    private float speedShoot = 4;
+    private float speedCharging = 2;
     private float distance;
     private float downDistance;
     private bool press;
     private bool trigger;
+    
    
-
     private void MoveShoot()
     {
          distance = Vector3.Distance(piston.position, upPoint.position);
@@ -32,6 +31,7 @@ public class Piston : MonoBehaviour
             if (distance > 0.1f)
             {
                 piston.Translate(Vector3.up * Time.deltaTime * speedShoot, Space.Self);
+                if (collisionPiston.col) return;
             }
             else
             {
@@ -41,7 +41,7 @@ public class Piston : MonoBehaviour
         }
         else
         {
-            if (downDistance >= 0.1f)
+            if (downDistance >= 0.1f || collisionPiston.col)
             {
                piston.Translate(Vector3.up * Time.deltaTime * -speedCharging, Space.Self);
             }
@@ -77,7 +77,6 @@ public class Piston : MonoBehaviour
             }
         }
     }
-
 
     void Update()
     {
