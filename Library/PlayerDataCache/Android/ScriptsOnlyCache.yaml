@@ -2,21 +2,20 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - Button
+    - CameraController
     - CollisionPiston
+    - Colovrat
+    - Cross
     - Piston
     - PressPiston
     - Salut
+    - SettingPanel
     - StartPlatform
     - TargetCam
     - Trampoline
     - TriggerButton
     - TriggerTramp
-    Cinemachine.dll:
-    - Cinemachine.CinemachineBrain
-    - Cinemachine.CinemachineComposer
-    - Cinemachine.CinemachinePipeline
-    - Cinemachine.CinemachineTransposer
-    - Cinemachine.CinemachineVirtualCamera
+    - Tube
     Unity.Recorder.Editor.dll:
     - UnityEditor.Recorder.MovieRecorderEditor
     - UnityEditor.Recorder.MovieRecorderSettings
@@ -66,67 +65,77 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 54
       Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
     - Class: 65
+      Script: {instanceID: 0}
+    - Class: 74
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 89
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1532}
+      Script: {instanceID: 1498}
     - Class: 114
-      Script: {instanceID: 1722}
+      Script: {instanceID: 1540}
     - Class: 114
-      Script: {instanceID: 2134}
+      Script: {instanceID: 1728}
     - Class: 114
-      Script: {instanceID: 2434}
+      Script: {instanceID: 2102}
     - Class: 114
-      Script: {instanceID: 2468}
+      Script: {instanceID: 2142}
     - Class: 114
-      Script: {instanceID: 2538}
+      Script: {instanceID: 2476}
     - Class: 114
-      Script: {instanceID: 2614}
+      Script: {instanceID: 2512}
     - Class: 114
-      Script: {instanceID: 2688}
+      Script: {instanceID: 2542}
     - Class: 114
-      Script: {instanceID: 2800}
+      Script: {instanceID: 2628}
     - Class: 114
-      Script: {instanceID: 2806}
+      Script: {instanceID: 2682}
     - Class: 114
-      Script: {instanceID: 3028}
+      Script: {instanceID: 2814}
     - Class: 114
-      Script: {instanceID: 3132}
+      Script: {instanceID: 2820}
     - Class: 114
-      Script: {instanceID: 3238}
+      Script: {instanceID: 2838}
     - Class: 114
-      Script: {instanceID: 3384}
+      Script: {instanceID: 3044}
     - Class: 114
-      Script: {instanceID: 3700}
+      Script: {instanceID: 3148}
     - Class: 114
-      Script: {instanceID: 3758}
+      Script: {instanceID: 3208}
     - Class: 114
-      Script: {instanceID: 4204}
+      Script: {instanceID: 3256}
     - Class: 114
-      Script: {instanceID: 4466}
+      Script: {instanceID: 3324}
     - Class: 114
-      Script: {instanceID: 4890}
+      Script: {instanceID: 3404}
     - Class: 114
-      Script: {instanceID: 4948}
+      Script: {instanceID: 3782}
     - Class: 114
-      Script: {instanceID: 46440}
+      Script: {instanceID: 4230}
     - Class: 114
-      Script: {instanceID: 55312}
+      Script: {instanceID: 4492}
     - Class: 114
-      Script: {instanceID: 226216}
+      Script: {instanceID: 4916}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
     - Class: 134
+      Script: {instanceID: 0}
+    - Class: 135
       Script: {instanceID: 0}
     - Class: 136
       Script: {instanceID: 0}
@@ -153,6 +162,12 @@ ScriptsOnlyBuild:
     - Class: 850595691
       Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: 040a0ac7fa3f10d090d6ce0305533046
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Tube
   - hash:
       serializedVersion: 2
       Hash: 5ab533713adae59372fb3e10a585c186
@@ -281,6 +296,12 @@ ScriptsOnlyBuild:
     className: GroupTrack
   - hash:
       serializedVersion: 2
+      Hash: 5be4ca5f32becbd5069f3c98d72eedeb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CameraController
+  - hash:
+      serializedVersion: 2
       Hash: 800c50acba124432abb4cf0d47202e06
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -341,6 +362,18 @@ ScriptsOnlyBuild:
     className: CinemachineSameAsFollowTarget
   - hash:
       serializedVersion: 2
+      Hash: 37f35dc1e64d1ee6e73c397185657a45
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Cross
+  - hash:
+      serializedVersion: 2
+      Hash: 58dd752fb2c4951a1d542cf18c5b7aa9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PressPiston
+  - hash:
+      serializedVersion: 2
       Hash: c8f1a224e0a43adc56c91864de822dd3
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
@@ -389,6 +422,12 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
+      Hash: 17e59d75ada894b0f373e3c6b58d2755
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Colovrat
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
@@ -417,6 +456,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: GraphicRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 1e1a717418411a01e0ec814630218ca9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SettingPanel
   - hash:
       serializedVersion: 2
       Hash: f40fedccd4adbc76605bea6d67537e4b
@@ -527,6 +572,12 @@ ScriptsOnlyBuild:
     className: Button
   - hash:
       serializedVersion: 2
+      Hash: 527344f7d96eeb3b9eaab75aadc3da11
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TriggerButton
+  - hash:
+      serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -537,6 +588,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Trampoline
+  - hash:
+      serializedVersion: 2
+      Hash: e207e42bd1d624bd600c8e87585053fb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CollisionPiston
   - hash:
       serializedVersion: 2
       Hash: 8aa3d6ccbcb54ee8db6c1229854adaaa
@@ -557,7 +614,7 @@ ScriptsOnlyBuild:
     className: Outline
   - hash:
       serializedVersion: 2
-      Hash: fad55eeb59b23b5f1545f0556df73641
+      Hash: 99fcd27e9825bc1b0501045c55dca402
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Piston
@@ -767,7 +824,7 @@ ScriptsOnlyBuild:
     className: CinemachineStoryboard
   - hash:
       serializedVersion: 2
-      Hash: 41232fca0d72eea7c28a581617c1ce3c
+      Hash: 29e39e4ec7b2a6bf2dde41914113966e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: StartPlatform
@@ -909,25 +966,7 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachineBlendListCamera
-  - hash:
-      serializedVersion: 2
-      Hash: 58dd752fb2c4951a1d542cf18c5b7aa9
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PressPiston
-  - hash:
-      serializedVersion: 2
-      Hash: e207e42bd1d624bd600c8e87585053fb
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CollisionPiston
-  - hash:
-      serializedVersion: 2
-      Hash: 527344f7d96eeb3b9eaab75aadc3da11
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: TriggerButton
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: D:/Project/RF10_piston.apk
+  playerPath: D:/Project/RF19_tube.apk

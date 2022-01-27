@@ -3,11 +3,22 @@ using UnityEngine;
 public class TargetCam : MonoBehaviour
 {
     [SerializeField] private Transform player;
-    [SerializeField] private Vector3 offset;
+   
+    public Vector3 offset;
 
+    private void Start()
+    {
+        LoadTarget(); 
+    }
     void Update()
     {
-       var pos = player.position + offset;
+        var pos = player.position + offset;
         transform.position = pos;
+    }
+
+    public void LoadTarget()
+    {
+        CameraData data = SavedSystem.LoadCamera();
+        offset.z = data.targetPos;
     }
 }

@@ -10,12 +10,10 @@ public class StartPlatform : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
     [SerializeField] private float speedCharging;
     [SerializeField] private float speedShooting;
     [SerializeField] private float impulse;
-    [SerializeField] private Slider power;
     [SerializeField] private GameObject startButton;
     [SerializeField] private GameObject katapult;
     [SerializeField] private GameObject deception;
     [SerializeField] private GameObject player;
-    //[SerializeField] private GameObject buttonCam;
     [SerializeField] private Rigidbody[] playerRb;
     [SerializeField] private Transform target;
     [SerializeField] private Transform shoot;
@@ -27,8 +25,6 @@ public class StartPlatform : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
 
     private void Start()
     {
-        power.maxValue = 1.15f;
-        power.value = shootForce;
     }
     public void OnPointerDown(PointerEventData eventData)
     {
@@ -45,8 +41,6 @@ public class StartPlatform : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
     private void Update()
     {
         current = katapult.transform;
-        power.value = shootForce;
-       
 
         if (isDown)
         {
@@ -57,12 +51,10 @@ public class StartPlatform : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
 
         if (start)
         {
-            //buttonCam.SetActive(false);
             if (current.position.z < shoot.position.z) katapult.transform.Translate(0, 0, Time.deltaTime * speedShooting);
 
             if (current.position.z >= shoot.position.z && a)
             {
-                //force = shootForce * impulse;
                 force = impulse;
 
                 a = false;

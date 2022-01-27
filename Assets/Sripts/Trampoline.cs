@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Trampoline : MonoBehaviour
@@ -47,7 +46,7 @@ public class Trampoline : MonoBehaviour
     {
         platform.transform.Translate(0, -dump * Time.deltaTime * timeReflect, 0);
         yield return new WaitForSeconds(wait);
-        platform.transform.Translate(0, dump * Time.deltaTime * timeReflect* 1.2f, 0);
+        platform.transform.Translate(0, dump * Time.deltaTime * timeReflect* 0.5f, 0);
         yield break;
     }
 }

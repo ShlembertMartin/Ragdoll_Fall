@@ -3,12 +3,12 @@ using UnityEngine;
 public class CollisionPiston : MonoBehaviour
 {
     public bool col;
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        col = true;
+        if(other.GetComponent<Rigidbody>()) col = true;
     }
-    private void OnCollisionExit(Collision collision)
+    private void OnTriggerExit(Collider other)
     {
-        col = false;
+        if (other.GetComponent<Rigidbody>()) col = false;
     }
 }

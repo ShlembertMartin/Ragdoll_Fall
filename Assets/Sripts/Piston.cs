@@ -7,6 +7,7 @@ public class Piston : MonoBehaviour
     [SerializeField] private Transform piston;
     [SerializeField] private Transform upPoint;
     [SerializeField] private Transform downPoint;
+    [SerializeField] private GameObject colPiston;
     [SerializeField] private float forceUp;
     [SerializeField] private float forceForward;
     [SerializeField] private Rigidbody[] playerRigidbody;
@@ -41,7 +42,7 @@ public class Piston : MonoBehaviour
         }
         else
         {
-            if (downDistance >= 0.1f || collisionPiston.col)
+            if (downDistance >= 0.1f)
             {
                piston.Translate(Vector3.up * Time.deltaTime * -speedCharging, Space.Self);
             }
@@ -53,6 +54,7 @@ public class Piston : MonoBehaviour
         if (other.GetComponent<Rigidbody>())
         {
             if (type == Type.Auto) trigger = true;
+            Time.timeScale = 0.7f;
         }
     }
 
@@ -70,6 +72,9 @@ public class Piston : MonoBehaviour
         Vector3 stop = Vector3.zero;
         if (collisionPiston.col && press || collisionPiston.col && trigger)
         {
+            colPiston.GetComponent<BoxCollider>().enabled = false;
+            Time.timeScale = 1.7f;
+
             for (int i = 0; i < playerRigidbody.Length; i++)
             {
                 playerRigidbody[i].velocity = stop;
